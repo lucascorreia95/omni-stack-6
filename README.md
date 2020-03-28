@@ -43,3 +43,24 @@ SQLite como banco de dados trouxe uma grande facilidade de configuração para o
 [Axios](https://github.com/axios/axios) foi utilizado para executar as *requests* para a aplicação do back-end (API), sim o mesmo Axios do front-end.
 
 [React Navigation](https://reactnavigation.org/) foi utilizado para gerenciar as rotas e navegações dentro do aplicativo.
+
+## Requerimentos para rodar o projeto
+
+1. Instalar o [NodeJS e o NPM](https://nodejs.org/en/) em sua máquina local.
+2. Na **pasta raiz** de cada prjeto (backend, frontend, mobile) execute **'npm install'**, para instalar todas as dependencias de cada um.
+3. Na **pasta raiz** de cada prjeto (backend, frontend, mobile) execute **'npm start'**, para executar cada um dos projetos.
+
+Depois de executar todas as estapas você deve ter o backend respondento em **http://localhost:3333/**, o frontend em **http://localhost:3000/**.
+
+Já o aplicativo **mobile** irá precisar de um pouco mais de **atenção** para ser utilizado!
+
+Ao executar o comando **npm start** na raiz do projeto **mobile**, você deve ter acesso ao **QRCode** que emulará o aplicativo em seu celular. Mas antes você deve instalar o aplicativo do **Expo** em seu celular, e este será responsável por fazer o *build* do código e rodar o mesmo em seu dispositivo.
+
+Outro ponto de **atenção** é o arquivo **api.js**, encontrado em */mobile/src/services/api.js* que faz a **conexão** com a aplicação **backend**. Você precisa alterar este arquivo, modificando a *baseURL* do método *axios.create()* para o **IP** da sua **máquina local**, onde está executando a aplicação do **backend**.
+
+Exemplo: 
+```
+const api = axios.create({
+    baseURL: 'http://192.168.0.101:3333'
+});
+```
