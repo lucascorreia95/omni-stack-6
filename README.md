@@ -2,6 +2,9 @@
 
 Projeto desenvolvido na Semana OmniStack 11.0, disponibilizada pela [Rocketseat](https://rocketseat.com.br/).
 
+Na aplicação **web**, ONGs são capazes de acessar, cadastrar e apagar casos que precisam de ajuda financeira de terceiros.
+Já na aplicação **mobile**, os usuários *(the heroes)* podem visualizar estes casos cadastrados, e entrar com contato com as respectivas ONGs, por e-mail e whatsapp, para ajudar.
+
 ### Objetivo
 
 Aprender e praticar as tecnologias NodeJS, React, React Native e o seu 'ecossistema'.
